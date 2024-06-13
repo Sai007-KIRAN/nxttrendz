@@ -69,7 +69,7 @@ public class ReviewJpaService implements ReviewRepository {
                 Product complete = pjr.findById(pId).get();
                 view.setProduct(complete);
             }
-            rjr.save(view);
+            rjr.save(newReview);
             return newReview;
         } catch (Exception e) {
             throw new ResponseStatusException(HttpStatus.NOT_FOUND);
