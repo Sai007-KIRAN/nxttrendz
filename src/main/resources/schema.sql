@@ -1,5 +1,5 @@
-DROP TABLE product;
-DROP TABLE review;
+-- DROP TABLE product;
+-- DROP TABLE review;
 
 create table if not exists product(
     productId INT PRIMARY KEY AUTO_INCREMENT,
